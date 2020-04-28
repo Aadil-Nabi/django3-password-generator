@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+  <body>
+
+
+    <div class="container text-center">
+      <div class="jumbotron">
+        <h1>Generate a Password</h1>
+        <form action="password">
+          <br>
+          <select name="length">
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6" selected="selected">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select> Numbers
+          <br>
+          <input type="checkbox" name="uppercase" value="Upper Case"> Upper Case
+          <br>
+          <br>
+          <input type="checkbox" name="numbers" value="Upper Case"> Numbers
+          <br>
+          <br>
+          <input type="checkbox" name="specialchars" value="Upper Case"> Special Chars
+          <br>
+          <input class="btn btn-primary" type="submit" name="Generate Password" value="Generate Password">
+
+
+        </form>
+        <p></p>
+          <a class="btn btn-warning" href="{% url 'about' %}">ABOUT</a>
+
+      </div>
+
+    </div>
+
+  </body>
+</html>
